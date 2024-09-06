@@ -38,8 +38,8 @@ const AvatarDisplay: React.FC<AvatarDisplayProps> = ({
       const randomColorCombination =
         colorCombinations[Math.floor(Math.random() * colorCombinations.length)];
       setColors(randomColorCombination);
-      setIsGenerating(false); 
-    }, 1500); 
+      setIsGenerating(false);
+    }, 1500);
   };
 
   return (
@@ -61,7 +61,6 @@ const AvatarDisplay: React.FC<AvatarDisplayProps> = ({
           fill={colors.text}
           fontWeight="bold"
           letterSpacing="-3px"
-          style={{ fontFamily: "'inter', serif" }} 
         >
           {initials}
         </text>
